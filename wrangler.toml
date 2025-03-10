@@ -1,0 +1,14 @@
+   name = "student-living"
+   type = "webpack"
+   account_id = "your-account-id"
+   workers_dev = true
+   route = ""
+   zone_id = ""
+
+   [site]
+   bucket = ".next/static"
+   include = ["public/*"]
+
+   [build]
+   command = "npm run build"
+   cwd = "."
