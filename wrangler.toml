@@ -1,14 +1,18 @@
-   name = "student-living"
-   type = "webpack"
-   account_id = "your-account-id"
-   workers_dev = true
-   route = ""
-   zone_id = ""
+name = "student-living"
+type = "webpack"
+account_id = "your-account-id"
+workers_dev = true
+route = ""
+zone_id = ""
+compatibility_date = "2024-03-10"
 
-   [site]
-   bucket = ".next/static"
-   include = ["public/*"]
+[site]
+bucket = ".next/static"
+include = ["public/*"]
 
-   [build]
-   command = "npm run build"
-   cwd = "."
+[build]
+command = "npm run build"
+cwd = "."
+
+[build.upload]
+format = "service-worker"
